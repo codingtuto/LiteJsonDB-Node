@@ -209,10 +209,9 @@ class JsonDB {
     }
 
     showDb() {
-        return this.db; // Change from console.log to return the db content
+        return this.db;
     }
-
-    // Utility and search functions integrated
+    
     hashPassword = utils.hashPassword;
     checkPassword = utils.checkPassword;
     getOrDefault = utils.getOrDefault;
@@ -221,7 +220,6 @@ class JsonDB {
     sanitizeOutput = (data) => JSON.stringify(data, null, 2);
     prettyPrint = (data) => console.log(JSON.stringify(data, null, 2));
 
-    // Dummy validateData method; this needs to be properly implemented
     validateData(data) {
         return typeof data === 'object' && data !== null;
     }

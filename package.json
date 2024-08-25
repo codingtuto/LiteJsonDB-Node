@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/lite-json-db.git"
+    "url": "git+https://github.com/codingtuto/LiteJsonDB-Node.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/lite-json-db/issues"
+    "url": "https://github.com/codingtuto/LiteJsonDB-Node/issues"
   },
-  "homepage": "https://github.com/yourusername/lite-json-db#readme"
+  "homepage": "https://github.com/codingtuto/LiteJsonDB-Node#readme"
 }
