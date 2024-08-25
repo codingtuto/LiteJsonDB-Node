@@ -1,0 +1,33 @@
+{
+  "name": "litejsondb",
+  "version": "1.0.2",
+  "description": "LiteJsonDB is a lightweight, local JSON database for Node.js. It provides a simple and intuitive API for managing JSON data. This package is a fork of the Python LiteJsonDB project, adapted for Node.js, and is currently about 45% complete.",
+  "longDescription": "LiteJsonDB offers a minimalistic and effective solution for managing JSON data in Node.js applications. This Node.js version is inspired by the Python LiteJsonDB project and includes core functionalities for adding, editing, retrieving, and deleting data. Note that this project is still under development, with many features yet to be added.",
+  "main": "src/litejsondb.js",
+  "scripts": {},
+  "keywords": [
+    "json",
+    "database",
+    "local",
+    "lite",
+    "nodejs"
+  ],
+  "author": "Coding Team",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "base-64": "^0.1.0",
+    "utf8": "^3.0.0",
+    "crypto": "^1.0.1",
+    "log4js": "^6.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/lite-json-db.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/lite-json-db/issues"
+  },
+  "homepage": "https://github.com/yourusername/lite-json-db#readme"
+}
