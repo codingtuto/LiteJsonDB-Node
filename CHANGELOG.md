@@ -1,3 +1,8 @@
+## [2.2.0] - 2025-19-06
+Fix error `Cannot find module`
+
+---
+
 ## [2.0.0] - 2025-18-06
 
 ### 💥 BREAKING CHANGES

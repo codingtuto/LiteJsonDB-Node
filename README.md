@@ -41,22 +41,22 @@ Every read, write, and update operation is performed through these key paths. Th
 
 ---
 
-## 🚨 v2.0 — Breaking Changes & Redesign
+## 🚨 v2.0x — Breaking Changes & Redesign
 
-LiteJsonDB 2.0 is a complete rewrite for better speed, clarity, and modularity.
+LiteJsonDB 2.0x is a complete rewrite for better speed, clarity, and modularity.
 
 > ⚠️ This update **requires refactoring your codebase**. We apologize for the disruption, but it was a necessary step to make the database simpler, safer, and much faster.
 
 > You can choose to stay on v1.x (1.0.5) for compatibility. However, we strongly recommend migrating to benefit from the performance and architectural improvements.
 
-### 🧹 Deprecated in v2.0
+### 🧹 Deprecated in v2.0x
 - ❌ **Subcollections**: Removed due to performance and complexity issues.
 - ❌ **Built-in code-less plugins**: Replaced with a more explicit and powerful plugin architecture.
 - ❌ **Global encryption mode**: Replaced by fast, per-key AES-256 encryption.
 - ❌ **`setData()` / `getData()`....**: Now simplified to `set()` and `get()`.
 
-### 🔁 Comparison Table: v1.x vs v2.0
-| Feature                    | v1.x                             | v2.0.0 (current)                 |
+### 🔁 Comparison Table: v1.x vs v2.0x
+| Feature                    | v1.x                             | v2.2.0 (current)                 |
 |----------------------------|----------------------------------|----------------------------------|
 | `setData()` / `getData()`  | ✅ Verbose                        | ✅ Replaced by `set()` / `get()` |
 | Global encryption          | ✅ Yes                            | ✅ Per-key AES-256 only          |
@@ -393,9 +393,9 @@ db.set('users/2', { name: 'Alice' });
 // Saved data: { name: 'Alice', createdAt: '...' }
 ```
 
-#### Why v2.0's Plugin System is a Major Leap Forward
+#### Why v2.0x's Plugin System is a Major Leap Forward
 
-In v1.x, plugins were implicit and "magical." You couldn't easily create your own, and their behavior was not transparent. The new hook-based system in v2.0 provides critical advantages:
+In v1.x, plugins were implicit and "magical." You couldn't easily create your own, and their behavior was not transparent. The new hook-based system in v2.0x provides critical advantages:
 
 1.  **Granular Control**: With `before` and `after` hooks for each core action, you have precise control over the entire data lifecycle. You can inspect, validate, modify, or cancel operations at will. This was impossible in v1.x.
 2.  **Performance**: Hooks are direct function calls within the operation's flow. They are lightweight and add minimal overhead. In contrast, the old system often required extra read/write cycles, making it less efficient.
